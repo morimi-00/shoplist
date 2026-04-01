@@ -352,11 +352,11 @@
     <div class="form-row">
       <input type="number" id="itemQty" placeholder="数量" min="1" value="1" style="max-width:120px;flex:none;" />
       <select id="itemPlace">
+        <option value="自宅">🛋 自宅</option>
         <option value="cocomori">🏠 cocomori</option>
         <option value="casamori">🏡 casamori</option>
         <option value="iemori">🏘 iemori</option>
         <option value="Amori">🏢 Amori</option>
-        <option value="自宅">🛋 自宅</option>
       </select>
     </div>
     <button class="btn-add" id="btnAdd" onclick="addItem()" disabled>追加する</button>
@@ -414,7 +414,7 @@
   // =============================================
   // 状態
   // =============================================
-  const PLACES = ['cocomori','casamori','iemori','Amori','自宅'];
+  const PLACES = ['自宅','cocomori','casamori','iemori','Amori'];
   const PLACE_EMOJI = { cocomori:'🏠', casamori:'🏡', iemori:'🏘', Amori:'🏢', 自宅:'🛋' };
 
   let items = [];
